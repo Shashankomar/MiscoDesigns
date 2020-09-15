@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_follower_img"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_picture"
+        tools:ignore="ContentDescription" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/iv_follower_img"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:text="Follow back"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow back"
+            android:textColor="#9A9A9A"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="2dp"
+        android:layout_toStartOf="@+id/iv_drawer"
+        android:background="@drawable/border"
+        android:includeFontPadding="false"
+        android:padding="6dp"
+        android:text="Follow back"
+        android:textColor="#ffffff"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/iv_drawer"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="3dp"
+        android:src="@drawable/ic_more"
+        app:tint="#9A9A9A"
+        tools:ignore="ContentDescription" />
+
+</RelativeLayout>
