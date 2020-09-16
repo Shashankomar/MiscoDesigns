@@ -27,7 +27,7 @@ public class EditProfileFragment extends Fragment {
     }
 
     private void initView(View view) {
-        View tv_btn = view.findViewById(R.id.tv_btn);
+      /*  View tv_btn = view.findViewById(R.id.tv_btn);
         tv_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,6 +37,6 @@ public class EditProfileFragment extends Fragment {
                         .addToBackStack(null)
                         .commit();
             }
-        });
+        });*/
     }
 }
