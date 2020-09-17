@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:id="@+id/ll_edit_profile"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
@@ -37,6 +38,11 @@
             android:background="#DDDDDD" />
 
     </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -173,13 +179,12 @@
         android:layout_marginBottom="16dp">
 
         <TextView
-            android:id="@+id/tv_btn_link"
+            android:id="@+id/tv_btn_copy_link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:drawableEnd="@drawable/ic_copy"
             android:drawablePadding="6dp"
-
             android:drawableTint="#7C7C7C"
             android:gravity="center"
             android:paddingStart="7dp"

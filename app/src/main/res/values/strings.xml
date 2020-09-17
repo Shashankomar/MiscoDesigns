@@ -2,4 +2,8 @@
     <string name="app_name">MIsco Designs</string>
     <string name="following">Following</string>
     <string name="followers">Followers</string>
+    <string name="title_activity_favourite">FavouriteActivity</string>
+    <string name="videos">VIDEOS</string>
+    <string name="hashtags">HASHTAGS</string>
+    <string name="sounds">SOUNDS</string>
 </resources>

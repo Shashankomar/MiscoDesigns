@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_margin="15dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/iv_fav_hashtag"
+        android:layout_width="@dimen/dp_40"
+        android:layout_height="@dimen/dp_40"
+        android:src="@drawable/ic_picture"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_fav_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toEndOf="@+id/iv_fav_hashtag"
+        android:layout_toRightOf="@+id/iv_fav_hashtag"
+        android:text="hello"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_views"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="end"
+        android:gravity="end"
+        android:text="123.5B views"
+        android:textColor="#7d7c82"
+        android:textSize="13dp" />
+
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_margin="1dp"
+    android:background="#000000"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_demo_pic"
+        tools:ignore="ContentDescription" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_fav_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_fav_description"
+            android:layout_marginBottom="5dp"
+            android:background="#595757"
+            android:padding="2dp"
+            android:text="2019-10-05"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_fav_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/rl_views"
+            android:layout_marginBottom="5dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:text="fun app discription sjlfjslfksjfls fslkf slfjslfk slf slfksflksj lsj flskf jlsj lskf slfjslkf lsfj slfjsfl ksfj lsjflks fls flksjflksf jslfj sljf slkdfsld fslk fslfsl kfslk fslkf slkfs flsdk"
+            android:textColor="#ffffff" />
+
+        <RelativeLayout
+            android:id="@+id/rl_views"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/iv_fav_profile_pic"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:backgroundTint="#ffffff"
+                android:src="@drawable/ic_demo_pic" />
+
+            <TextView
+                android:id="@+id/tv_fav_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:layout_toEndOf="@+id/iv_fav_profile_pic"
+                android:text="Samuelgrubbs"
+                android:textColor="#ffffff"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/iv_like"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="7dp"
+                android:layout_toStartOf="@+id/tv_fav_views"
+                android:src="@drawable/ic_heart"
+                app:tint="#ffffff" />
+
+            <TextView
+                android:id="@+id/tv_fav_views"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginLeft="4dp"
+                android:text="10.6M"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
